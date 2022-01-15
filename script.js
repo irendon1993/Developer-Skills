@@ -152,7 +152,7 @@ const printForecast = function (arr) {
   const weekForecast = [];
 
   for (let i = 0; i < arr.length; i++) {
-    let day = arr.length + 1 - (arr.length - i);
+    let day = i + 1; // arr.length + 1 - (arr.length - i);
     // B) FIND
     // if (arr[i] >= 0) {
     forecast = dots + arr[i] + `ºC in ${day} days `;
